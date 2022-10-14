@@ -1,0 +1,38 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: black;
+}
+h1
+{
+	position: relative;
+	font-family: inherit;
+	color:lightpink ;
+	text-transform: uppercase;
+	font-family: 2em;
+	letter-spacing: 4px;
+	overflow: hidden;
+	background: linear-gradient(90deg,#12c2e9,#c471ed,#f64f59);
+	background-size: 70%;
+	background-repeat: no-repeat ;
+
+	animation: animate 3s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(225,255,255,.1);
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: -500%;
+
+	}
+	100%
+	{
+		background-position: 500%;
+	}
+}

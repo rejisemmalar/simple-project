@@ -1,0 +1,65 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	font-family: serif;
+	min-height: 50vh;
+	display: flex;
+	justify-content: left;
+	align-items: flex-end;
+	cursor: pointer;
+	transform-style: preserve-3d;
+}
+.container{
+	width: 30%;
+	min-height: 30vh;
+	letter-spacing: 2px;
+	
+	justify-content: left;
+	align-items: flex-start;
+	
+}
+.box{
+	min-height: 10vh;
+	width: 150%;
+	background: deepskyblue;
+	border-radius: 30px;
+
+	box-shadow: 5px 5px 6px rgba(0,0,0,.5),-5px -5px 6px rgba(0, 0, 0, .5);
+	flex-wrap: wrap;
+	display:flex ;
+
+	align-items: flex-start;
+	left: 2px;
+	
+	}
+	p{
+		color:darkgreen;
+		font-size: 20px;
+	}
+	#study{
+		width: 3rem;
+		height: 3 rem;
+		position: absolute;
+		top: 9.7rem;
+		left: 35rem;
+		bottom: 6rem;
+		right: 7rem;
+		display: flex;
+		height: 60px;
+		width: 60px;
+		border-radius: 60%;
+		border: 5px solid red;
+	}
+	.cont1{
+	width: 10%;
+	min-height: 10vh;
+	letter-spacing: 2px;
+	
+	justify-content: left;
+	align-items: flex-start;
+		

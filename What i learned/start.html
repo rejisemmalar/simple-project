@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>what i LEARNED?</title>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="path "></div>
+			<div class="form" id="form">
+				<h1>Give Some Details</h1>
+				<label>User Name</label><br><br>
+				<input type="text" ><br><br>
+				<label>Email-Id</label><br><br>
+				<input type="text" ><br><br>
+				<label>Password</label><br><br>
+				<input type="text" ><br><br><br>
+				<a href="h2.jpg"target="blank">
+				<button id="button"> SUBMIT</button></a><br><br>
+
+
+			</div>
+			<img src="learn1.jpg"id="learn">
+			<img src="develop2.jpg"id="develop">
+			<h2 id="head">what i &nbsp; LEARNED?</h2>
+			<a href="finished.html"target="blank">
+			<h4 id="next"><i>next>></i></a></h4>
+
+		</div>
+	</div>
+
+</body>
+</html>
+<script >
+	const box=document.querySelector('.box');
+	const container=document.querySelector('.container');
+	const head=document.querySelector('#head');
+	const learn1=document.querySelector('#learn');
+	const develop2=document.querySelector('#develop');
+	const form=document.querySelector('#form');
+
+	container.addEventListener("mousemove",(e)=>{
+		console.log(e.pageX,e.pageY);
+		let horizantal=(window.innerWidth/2-e.pageX)/15;
+		let vertical=(window.innerHeight/2-e.pageY)/15;
+		box.style.transform=`rotateX(${vertical}deg) rotateY(${horizantal}deg)`;
+	});
+
+	container.addEventListener("mouseenter",(e)=>{
+		box.style.transform=".1s";
+		head.style.transform="translateZ(120px)";
+		learn1.style.transform="translateZ(120px)";
+		develop2.style.transform="translateZ(120px)";
+		form.style.transform="translateZ(120px)";
+
+	});
+	container.addEventListener("mouseleave",(e)=>{
+		box.style.transform=".1s";
+		box.style.transform="rotateY(0deg) rotateX(0deg) ";
+		head.style.transform="translateZ(0px)";
+		learn1.style.transform="translateZ(0px)";
+		develop2.style.transform="translateZ(0px)";
+		form.style.transform="translateZ(0px)";
+
+
+	});
+</script>
